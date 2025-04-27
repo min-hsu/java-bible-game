@@ -12,7 +12,7 @@ public abstract class Sprite {
     protected Point absolutePosition;
 
     public void draw(Graphics g) {
-        if(relativePosition != null){
+        if (relativePosition != null) {
             img.paintIcon(null, g, absolutePosition.x, absolutePosition.y);
         }
     }
@@ -26,7 +26,7 @@ public abstract class Sprite {
         absolutePosition = new Point((x - 1) * Main.CELL, (y - 1) * Main.CELL);
     }
 
-    public void setNullPosition(Point p) {
+    public void setNullPosition() {
         relativePosition = null;
         absolutePosition = null;
     }
